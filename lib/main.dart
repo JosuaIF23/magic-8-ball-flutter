@@ -18,7 +18,21 @@ class BallPage extends StatelessWidget {
         ),
         backgroundColor: Colors.blue[800],
       ),
-      body: Container(),
+      body: Ball(),
     );
+  }
+}
+
+class Ball extends StatefulWidget {
+  const Ball({super.key});
+
+  @override
+  State<Ball> createState() => _BallState();
+}
+
+class _BallState extends State<Ball> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(child: Image.asset('images/ball1.png'));
   }
 }
